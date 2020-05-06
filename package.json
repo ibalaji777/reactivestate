@@ -1,0 +1,27 @@
+{
+  "name": "reativestate",
+  "version": "0.0.1",
+  "description": "reactive input html",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibalaji777/reactivestate.git"
+  },
+  "keywords": [
+    "html",
+    "reactive",
+    "store",
+    "tiny",
+    "js",
+    "watcher"
+  ],
+  "author": "Balaji",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ibalaji777/reactivestate/issues"
+  },
+  "homepage": "https://github.com/ibalaji777/reactivestate#readme"
+}
