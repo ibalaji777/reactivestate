@@ -69,20 +69,22 @@ function data_bind(angalware, value) {
 		}
 
 	})
-	
+	// angalware_data_store[angalware]=value;
 }
 
 //watch data changes
 function watching(obj_parent, inside_obj, arg, watcher_set) {
-
+	// console.log("setten")
 	Object.defineProperty(obj_parent, inside_obj, {
 		get: function () {
 
+			// watcher_get(inside_obj,val);
 
 			return arg;
 		},
 
 		set: function (val) {
+			// angalware_data_store[inside_obj]=val;
 			arg = val;
 			watcher_set(inside_obj, val)
 
@@ -92,7 +94,7 @@ function watching(obj_parent, inside_obj, arg, watcher_set) {
 
 
 }
-module.exports = { 
+// module.exports = { 
 
-    rstate
-}
+//     rstate
+// }
