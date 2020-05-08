@@ -1,0 +1,38 @@
+{
+  "name": "@isat07/reactivestate",
+  "version": "0.0.3",
+  "description": "reactive dom",
+  "main": "./dist/index.js",
+  "scripts": {
+    "dev":"webpack-dev-server",
+    "build": "rm -rf build && webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibalaji777/reactivestate.git"
+  },
+  "keywords": [
+    "reactive",
+    "data",
+    "state",
+    "mangement",
+    "reactive",
+    "html",
+    "data",
+    "model"
+  ],
+  "author": "Balaji",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ibalaji777/reactivestate/issues"
+  },
+  "homepage": "https://github.com/ibalaji777/reactivestate#readme",
+  "dependencies": {
+    "requirejs": "^2.3.6"
+  },
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}

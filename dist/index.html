@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>app</title>
+</head>
+<style>
+* {
+    box-sizing: border-box;
+  }
+  
+  </style>
+  </head>
+  <body>
+  
+  <div class="row">
+    <div class="toolbar" >
+      toolbar
+      <div id="toolbar_widgets">
+          <div>
+            <select angalware="paper_size">
+            <option value="a3">a3</option>
+            <option value="a4">a4</option>
+            <option value="a5">a5</option>
+            <option value="letter">letter</option>
+            <option value="legal">legal</option>
+        
+            <select>  
+           </div>
+          
+            <div class="row"> 
+              <div class="column">
+            <input angalware="paper_width" validate="[something==''||'please validate']" type="text">  
+              </div>
+              <div class="column">
+            <input angalware="paper_height" type="text" >
+          </div>
+            </div>
+
+margin:
+<hr>
+
+          <div class="row"> 
+            <div class="column"> 
+            <input type="text" angalware="paper_margin_top" >  
+            </div>
+            <div class="column">
+            <input type="text" angalware="paper_margin_right">
+          </div>
+          </div>
+          <div class="row"> 
+          <div class="column">
+          <input type="text" angalware="paper_margin_bottom" >  
+         </div>
+         <div class="column">
+          <input type="text" angalware="paper_margin_left">
+           </div>
+
+        </div>
+padding:
+<hr>
+        <div class="row"> 
+          <div class="column"> 
+          <input type="text" angalware="paper_padding_top"  >  
+          </div>
+          <div class="column">
+          <input type="text" angalware="paper_padding_right">
+        </div>
+        </div>
+        <div class="row"> 
+        <div class="column">
+        <input type="text" angalware="paper_padding_bottom">  
+       </div>
+       <div class="column">
+        <input type="text" angalware="paper_padding_left" >
+         </div>
+
+      </div>
+
+
+       </div>
+Orientation
+<hr>
+
+<div class="row">
+
+  <input type="radio" angalware="orientation1" name="a"  value="portrait">
+  <label for="male">Portrait</label><br>
+  <input type="radio" angalware="orientation1" name="a" value="landscape">
+  <label for="male">Landscape</label><br>
+  <div style="background:lightgray;width:100px;" id="result">RESULT</div>
+
+</div>
+<input type="checkbox" angalware="vehicle1"  value="Bike">
+<label for="vehicle1">  I have a bike</label><br>
+<input type="checkbox" angalware="vehicle2" value="Car">
+<label for="vehicle2"> I have a car</label><br>
+
+</div>
+
+
+
+  <!-- <script src="./js//toolbar.js"></script> -->
+  <!-- <script src="./js//rstate.min.js"></script> -->
+
+  <!-- <script data-main = "main.js" src = "require.js"></script> -->
+ 
+  <script src="dist/main.js"></script>
+  <!-- <script type="module" src="script.js"></script> -->
+<script>
+  window.onload = function () {
+rstate((state,d)=>{
+console.log(d)
+  if(state){
+d.paper_width=490;
+d.vehicle1="Bike";
+// d.vehicle2="Car";
+d.orientation1="landscape";
+d.paper_size="legal"
+}
+console.log("paper_width"+d.paper_width)
+console.log("orientation1"+d.orientation1)
+console.log("vehicle1"+d.vehicle1)
+console.log("paper_size"+d.paper_size)
+
+});
+
+  }
+// console.log(data)
+</script>
+</body>
+
+</html>
